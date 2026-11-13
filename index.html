@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <title>FishGoo spreadsheet – hitta plagg, jämför mått och granska QC</title>
+  <meta name="description" content="Bläddra bland skor, kläder och accessoarer. Lär dig använda ett FishGoo spreadsheet för att jämföra mått, granska QC-bilder och räkna på frakt till Sverige.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="sv_SE">
+  <meta property="og:title" content="FishGoo spreadsheet – en svensk köpguide">
+  <meta property="og:description" content="Hitta rätt kategori och kontrollera produktlänk, storlek, QC-bilder och leveranskostnad innan du beställer.">
+  <!--
+  Sekundära sökfraser: FishGoo köpguide, FishGoo QC-bilder, FishGoo storleksguide, FishGoo frakt till Sverige.
+  Längre sökfraser: hur fungerar FishGoo spreadsheet, hitta skor i FishGoo spreadsheet,
+  hitta kläder i FishGoo spreadsheet, jämföra FishGoo produktlänkar, kontrollera produktvariant före köp,
+  läsa en Weidian-produktlänk, jämföra Taobao och Weidian länkar, hitta säljarens storlekstabell,
+  mäta innersula på sneakers, jämföra skostorlek i centimeter, mäta bröstvidd på huvtröja,
+  mäta ärmlängd på jacka, jämföra midjemått på byxor, välja storlek på keps,
+  kontrollera mått på väska, granska sömmar på QC-bilder, be om närbild på etikett,
+  skilja lagerfoto från säljarbild, kontrollera färg på lagerfoto, vad betyder QC hos FishGoo,
+  beräkna totalpris i svenska kronor, jämföra fraktalternativ till Sverige,
+  vad är volymvikt vid frakt, kontrollera importavgifter till Sverige,
+  vad göra om produktlänken slutat fungera, kan QC-bilder bekräfta äkthet.
+  Bing-resultatsidan gick inte att verifiera. Ämnesvalet bygger på tio relevanta webbplatser från tillgänglig webbsökning.
+  -->
+  <style>
+    :root{color-scheme:light;--ink:#251d30;--muted:#57485e;--accent:#642e56;--line:#d9ccd8;--paper:#f8f4ef;--white:#fff}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    .wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+    header{background:#301e37;color:#fff}
+    header .wrap{padding-block:.8rem;font-weight:700}
+    nav{padding-block:1rem}
+    nav ul,.gallery{list-style:none;padding:0;margin:0;display:grid;gap:.65rem}
+    nav ul{grid-template-columns:repeat(auto-fit,minmax(9rem,1fr))}
+    a{color:var(--accent)}
+    nav a{display:grid;place-items:center;min-height:2.75rem;padding:.35rem .5rem;background:var(--white);border:1px solid var(--line);border-radius:.45rem;text-align:center;font-weight:650}
+    a:hover{text-decoration-thickness:.15em}
+    :focus-visible{outline:3px solid #a54a80;outline-offset:3px}
+    .hero{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(1rem,4vw,3.5rem);align-items:center;padding:clamp(1rem,4vw,3rem);background:#eadce9;border-radius:.9rem}
+    h1,h2,h3{line-height:1.18}
+    h1{font-size:clamp(2.35rem,6vw,4.8rem);letter-spacing:-.045em;margin:0 0 1rem}
+    h2{font-size:clamp(1.5rem,3.3vw,2.1rem);margin:0 0 .85rem}
+    h3{font-size:1.16rem;margin:0 0 .5rem}
+    p{margin:.55rem 0 1rem}
+    figure{margin:0}
+    img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:#faf8f8;border-radius:.55rem}
+    figcaption{font-size:.85rem;color:var(--muted);margin-top:.4rem}
+    .button{display:inline-block;background:var(--accent);color:#fff;padding:.65rem 1rem;border-radius:.45rem;font-weight:700;text-decoration:none}
+    section,footer{margin-block:2rem}
+    .gallery{grid-template-columns:repeat(auto-fit,minmax(min(100%,12rem),1fr))}
+    .gallery li,article{padding:1rem;background:var(--white);border:1px solid var(--line);border-radius:.7rem}
+    .articles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,19rem),1fr));gap:1rem}
+    article p:last-child,details p:last-child{margin-bottom:0}
+    details{padding:.8rem 0;border-top:1px solid var(--line)}
+    summary{cursor:pointer;font-weight:700}
+    footer{padding-top:1rem;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
+    @media(max-width:44rem){.hero{grid-template-columns:1fr}nav ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {"@type":"WebPage","name":"FishGoo spreadsheet – en svensk köpguide","description":"En oberoende svensk guide för att jämföra produktlänkar, storlekar, QC-bilder och frakt till Sverige.","inLanguage":"sv"},
+      {"@type":"FAQPage","inLanguage":"sv","mainEntity":[
+        {"@type":"Question","name":"Vad är ett FishGoo spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"Det är en sammanställning av produktlänkar som du kan använda för att hitta och jämföra varor. Varje lista kan ha olika kolumner, till exempel kategori, storlek eller länk till QC-bilder."}},
+        {"@type":"Question","name":"Kan QC-bilder bekräfta att varan är äkta?","acceptedAnswer":{"@type":"Answer","text":"QC-bilder visar synliga detaljer som färg, sömmar och märkning. Äkthet kräver underlag som går att verifiera, till exempel dokumenterad proveniens."}},
+        {"@type":"Question","name":"Hur uppskattar jag totalpriset i svenska kronor?","acceptedAnswer":{"@type":"Answer","text":"Lägg ihop varans pris, eventuell inrikesfrakt, agentavgifter och internationell frakt. Räkna sedan om till kronor och kontrollera vilka importkostnader som kan tillkomma för just din försändelse."}},
+        {"@type":"Question","name":"Vad gör jag om produktlänken har slutat fungera?","acceptedAnswer":{"@type":"Answer","text":"Sök efter modellnamn eller artikelnummer på nytt. Kontrollera den nya säljarens variant, mått och villkor innan du sparar länken."}}
+      ]}
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/ninny/">
+</head>
+<body>
+  <header><div class="wrap">Svensk köpguide för skor, kläder och accessoarer</div></header>
+  <main class="wrap">
+    <nav aria-label="Produktkategorier hos HipoBuyFind">
+      <ul>
+        <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Skor</a></li>
+        <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Huvtröjor och tröjor</a></li>
+        <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirts</a></li>
+        <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Jackor</a></li>
+        <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Byxor och shorts</a></li>
+        <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Huvudbonader</a></li>
+        <li><a href="https://hipobuyfind.com/category-917-Sets.html">Klädset</a></li>
+        <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Underkläder</a></li>
+        <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Matchtröjor</a></li>
+        <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Accessoarer</a></li>
+      </ul>
+    </nav>
+    <section class="hero" aria-labelledby="sidtitel">
+      <div>
+        <h1 id="sidtitel">FishGoo spreadsheet</h1>
+        <p>Använd ett FishGoo spreadsheet som en lista över produktlänkar. Spara rätt färg och storlek, jämför måtten och granska kvalitetsbilderna innan du bestämmer dig. Kategorierna ovan leder till HipoBuyFind.</p>
+        <a class="button" href="https://www.hipobuyfind.com">Öppna HipoBuyFind</a>
+      </div>
+      <figure>
+        <img src="https://alssports.vteximg.com.br/arquivos/ids/3879892/10613661x1238466.jpg?v=639047797771100000" width="640" height="480" fetchpriority="high" loading="eager" alt="Vit Nike Air Force 1-sneaker med vit sula">
+        <figcaption>Nike Air Force 1 som exempel på en låg sneaker.</figcaption>
+      </figure>
+    </section>
+    <section aria-labelledby="guider">
+      <h2 id="guider">Från produktlänk till köpbeslut</h2>
+      <div class="articles">
+        <article>
+          <h3>Kontrollera länk och variant</h3>
+          <p>Öppna säljarens produktsida och kontrollera färg, storlek och modellnamn. En länk från Weidian, Taobao eller 1688 kan innehålla flera varianter med olika mått. Spara variantens namn tillsammans med länken så att du kan hitta samma val senare.</p>
+        </article>
+        <article>
+          <h3>Jämför mått i centimeter</h3>
+          <p>Mät innersulan i en sko som passar och jämför med säljarens uppgift. För en huvtröja mäter du bredden mellan armhålorna när plagget ligger plant. Kontrollera om tabellen anger platt bredd eller hela omkretsen innan du jämför.</p>
+        </article>
+        <article>
+          <h3>Granska FishGoo QC-bilder</h3>
+          <p>QC står för kvalitetskontroll. Kontrollera om bilden visar varan som kommit till lagret eller kommer från säljarens annons. Be om en närbild om etiketten är oläslig och om en bild med måttband om storleken är avgörande.</p>
+        </article>
+        <article>
+          <h3>Jämför FishGoo-frakt till Sverige</h3>
+          <p>Jämför fraktalternativen när paketets vikt och yttermått är kända. Om fraktbolaget debiterar efter volymvikt kan en stor skokartong påverka fraktpriset. Använd samma växelkurs när du jämför alternativen i kronor.</p>
+        </article>
+      </div>
+    </section>
+    <section aria-labelledby="bilder">
+      <h2 id="bilder">Detaljer att jämföra på kläder och accessoarer</h2>
+      <p>Bilderna visar exempel på modeller och detaljer. Tillgänglighet och varianter framgår hos respektive säljare.</p>
+      <ul class="gallery">
+        <li><figure><img src="https://samtabak.com/cdn/shop/files/AURORA_BV2654-010_PHSFH001-2000.jpg?v=1740500771&amp;width=480" width="480" height="360" loading="lazy" decoding="async" alt="Svart Nike Sportswear Club Fleece-huvtröja"><figcaption>Nike-huvtröja – jämför bröstvidd och ärmlängd.</figcaption></figure></li>
+        <li><figure><img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="640" height="480" loading="lazy" decoding="async" alt="Beige och brun Gucci-keps med GG-mönster"><figcaption>Gucci-keps – kontrollera huvudmått och spänne.</figcaption></figure></li>
+        <li><figure><img src="https://kr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-%EC%8A%A4%ED%94%BC%EB%94%94-%EB%B0%98%EB%91%98%EB%A6%AC%EC%97%90-25-speedy-bandouliere-25---M46977_PM2_Front%20view.png?hei=480&amp;wid=480" width="480" height="360" loading="lazy" decoding="async" alt="Brun Louis Vuitton Speedy Bandoulière 25 med monogram"><figcaption>Louis Vuitton-väska – jämför yttermått och rem.</figcaption></figure></li>
+        <li><figure><img src="https://assets.hermes.com/is/image/hermesproduct/%E3%82%AB%E3%83%AC-90-%E3%80%8A%E3%81%99%E3%81%B9%E3%81%A6%E3%81%AF%E9%9E%8D%E3%81%AE%E4%B8%AD%E3%81%AB%E3%80%8B--004204S%2005-flat-wm-3-0-0-1000-1000_g.jpg" width="480" height="360" loading="lazy" decoding="async" alt="Mönstrad Hermès Carré 90-scarf utbredd plant"><figcaption>Hermès-scarf – kontrollera material och kantavslut.</figcaption></figure></li>
+        <li><figure><img src="https://assets.christiandior.com/is/image/diorprod/E1594CDNMTD300_SBG_E01-34?%24r9x10_raw%24=&amp;crop=0%2C0%2C4000%2C5000&amp;hei=480&amp;scale=1&amp;wid=444" width="444" height="333" loading="lazy" decoding="async" alt="Guldfärgade Dior CD Navy-stiftörhängen"><figcaption>Dior-örhängen – jämför storlek, material och fäste.</figcaption></figure></li>
+      </ul>
+    </section>
+    <section aria-labelledby="faq">
+      <h2 id="faq">Vanliga frågor</h2>
+      <details open>
+        <summary>Vad är ett FishGoo spreadsheet?</summary>
+        <p>Det är en sammanställning av produktlänkar som du kan använda för att hitta och jämföra varor. Varje lista kan ha olika kolumner, till exempel kategori, storlek eller länk till QC-bilder.</p>
+      </details>
+      <details>
+        <summary>Kan QC-bilder bekräfta att varan är äkta?</summary>
+        <p>QC-bilder visar synliga detaljer som färg, sömmar och märkning. Äkthet kräver underlag som går att verifiera, till exempel dokumenterad proveniens.</p>
+      </details>
+      <details>
+        <summary>Hur uppskattar jag totalpriset i svenska kronor?</summary>
+        <p>Lägg ihop varans pris, eventuell inrikesfrakt, agentavgifter och internationell frakt. Räkna sedan om till kronor och kontrollera vilka importkostnader som kan tillkomma för just din försändelse.</p>
+      </details>
+      <details>
+        <summary>Vad gör jag om produktlänken har slutat fungera?</summary>
+        <p>Sök efter modellnamn eller artikelnummer på nytt. Kontrollera den nya säljarens variant, mått och villkor innan du sparar länken.</p>
+      </details>
+    </section>
+  </main>
+  <footer class="wrap">Oberoende köpguide. Varumärkena identifierar modellerna som visas på bilderna.</footer>
+</body>
+</html>
